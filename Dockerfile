@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:1.8.1-cuda10.2-cudnn7-devel
+FROM pytorch/pytorch:1.7.0-cuda11.0-cudnn8-devel
 RUN conda upgrade --all
 RUN pip install tqdm torchvision albumentations ttach pandas
 RUN pip install cython easydict torchcontrib yacs visdom pycocotools mmcv pycocotools
