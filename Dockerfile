@@ -8,7 +8,5 @@ RUN apt-get update
 RUN pip uninstall opencv-python
 RUN pip install opencv-python-headless
 RUN conda install git
-RUN pip install git+git://github.com/waspinator/pycococreator.git@0.2.0
-RUN pip install git+https://github.com/mapillary/inplace_abn.git
 RUN pip install 'git+https://github.com/facebookresearch/detectron2.git'
 RUN pip install git+https://github.com/mcordts/cityscapesScripts.git
