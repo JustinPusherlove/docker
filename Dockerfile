@@ -1,4 +1,26 @@
 FROM pytorch/pytorch:1.9.0-cuda10.2-cudnn7-devel
-RUN conda install git
-RUN pip install 'git+https://github.com/facebookresearch/detectron2.git'
-RUN pip install git+https://github.com/mcordts/cityscapesScripts.git
+RUN pip install  
+    - blessings==1.7
+    - chromedriver-py==91.0.4472.19
+    - colorama==0.4.4
+    - cycler==0.10.0
+    - cython==0.29.21
+    - gpustat==0.6.0
+    - kiwisolver==1.2.0
+    - matplotlib==3.3.0
+    - numpy==1.16.1
+    - nvidia-ml-py3==7.352.0
+    - pandas==1.1.4
+    - psutil==5.7.3
+    - pycocotools==2.0.1
+    - pyparsing==2.4.7
+    - python-dateutil==2.8.1
+    - pytz==2020.4
+    - pyyaml==5.3.1
+    - redis==2.10.6
+    - scipy==1.1.0
+    - seaborn==0.11.0
+    - selenium==3.141.0
+    - setproctitle==1.2.2
+    - tqdm==4.59.0
+    - urllib3==1.26.5
