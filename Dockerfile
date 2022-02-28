@@ -1,4 +1,5 @@
 FROM pytorch/pytorch:0.4-cuda9-cudnn7-devel
+FROM python:2.7.12
 RUN pip install --upgrade pip
 RUN pip install blessings==1.7 chromedriver-py==91.0.4472.19 colorama==0.4.4 cycler==0.10.0 cython==0.29.21 gpustat==0.6.0 kiwisolver==1.2.0 matplotlib==3.3.0 numpy==1.16.1 easydict
 RUN pip install nvidia-ml-py3==7.352.0 pandas==1.1.4 psutil==5.7.3 pycocotools==2.0.1 pyparsing==2.4.7 python-dateutil==2.8.1
