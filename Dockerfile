@@ -1,6 +1,2 @@
-FROM pytorch/pytorch:0.4-cuda9-cudnn7-devel
-FROM python:2.7.12
-RUN pip install --upgrade pip packaging pyyaml torch future torchvision
-RUN pip install blessings chromedriver-py colorama cycler cython kiwisolver matplotlib numpy easydict
-RUN pip install nvidia-ml-py3 pandas psutil pycocotools pyparsing python-dateutil
-RUN pip install pytz redis scipy seaborn selenium setproctitle tqdm urllib3 networkx opencv-python==3.2.0.6 h5py scikit-image tensorboardX
+FROM pytorch/pytorch:1.5-cuda10.1-cudnn7-devel
+RUN pip install torchvision tensorboardX tensorboard tensorflow easydict pandas numpy scipy opencv-python pyyaml yacs
